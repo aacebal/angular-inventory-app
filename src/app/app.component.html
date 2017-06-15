@@ -1,6 +1,6 @@
 <!--The whole content below can be removed with the new code.-->
-<div style="text-align:center">
-  <h1>
-    Welcome to {{title}}!!
-  </h1>
-  
+
+  <div *ngFor="let product of products" class="app-root">
+    <h1>{{ product.name }}</h1>
+    <span>{{ product.sku }}</span>
+  </div>

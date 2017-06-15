@@ -7,16 +7,6 @@ import { Product } from './product.model'
   styleUrls: ['./product.component.css']
 })
 export class ProductComponent implements OnInit {
-  product: Product;
-
-  constructor() {
-  this.product = new Product(
-    'NIECHAT',
-    'A Nice Black Hat',
-    '/assets/images/products/blackhat.jpg',
-    ['Men', 'Accessories', 'Hats'],
-    29.99
-  ); }
 
   ngOnInit() {
   }
