@@ -2,7 +2,7 @@ import { Component } from '@angular/core';
 import { Product } from './product/product.model'
 
 @Component({
-  selector: 'app-root',
+  selector: 'inventory-app-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })
@@ -30,5 +30,9 @@ export class AppComponent {
         ['Women', 'Apparel', 'Jackets & Vests'],
         238.99)
     ];
+  }
+
+  productWasSelected(product: Product): void {
+    console.log('Product clicked: ', product)
   }
 }
