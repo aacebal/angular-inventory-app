@@ -2,11 +2,11 @@ import { Component, OnInit, EventEmitter, Input, Output } from '@angular/core';
 import { Product } from  '../product/product.model';
 
 @Component({
-  selector: 'app-products-list',
+  selector: 'products-list',
   templateUrl: './products-list.component.html',
   styleUrls: ['./products-list.component.css']
 })
-export class ProductsListComponent implements OnInit {
+export class ProductsListComponent {
 
   @Input() productList: Product[];
 
@@ -14,10 +14,13 @@ export class ProductsListComponent implements OnInit {
 
   private currentProduct: Product;
 
-  constructor() { }
-
-  ngOnInit() {
-    this.onProductSelected = new EventEmitter();
+  constructor() {
+  this.onProductSelected = new EventEmitter();
+}
+  clicked(product: Product): void {
+    this.currentProduct = product;
+    this.onProductSelected.emit(product);
+    this.onProductSelected.emit(product);
   }
 
   isSelected(product: Product): boolean {
