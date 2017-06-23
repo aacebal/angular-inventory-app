@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { Product } from './product/product.model'
+import { Product } from './product.model'
 
 @Component({
   selector: 'inventory-app-root',
@@ -14,7 +14,7 @@ export class AppComponent {
       new Product(
         'NICEHAT',
         'A Nice Black Hat',
-        '/assets/images/products/blackhat.jpg',
+        '/assets/images/products/black-hat.jpg',
         ['Men', 'Accessories', 'Hats'],
         29.99),
       new Product(
@@ -26,7 +26,7 @@ export class AppComponent {
       new Product(
         'NEATOJACKET',
         'Blue Jacket',
-        '/assets/images/products/blue-jacket',
+        '/assets/images/products/blue-jacket.jpg',
         ['Women', 'Apparel', 'Jackets & Vests'],
         238.99)
     ];

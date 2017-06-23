@@ -1,5 +1,5 @@
 import { Component, Input, HostBinding } from '@angular/core';
-import { Product } from '../product/product.model';
+import { Product } from '../product.model';
 
 @Component({
   selector: 'product-row',
